@@ -1,0 +1,105 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>JunHub</title> 
+                <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+                    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Начало header-->
+        <header>
+            <h1 class="h-class">JunHub</h1>
+        </header>
+        <!--Конец header-->
+
+            <!--Начало nav-->
+                <nav>
+                <ul>
+                    {% block sidenav %}
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li> 
+                    {% endblock sidenav %}
+                </ul>
+                </nav>
+
+            <!--конец nav-->
+
+            <!--Начало main-->
+                <main>
+
+                    <div class="bg-o-project">
+                    <h2 class="h2-text">
+                        {% block title_1 %}  {% endblock title_1 %}
+                    </h2>
+                        <p class="text-p">
+                            {% block content_1 %} {% endblock content_1 %}
+                        </p>
+                    </div>
+                        <div class="creater-1-div">
+                            <h2 class="h2-text-two">
+                                {% block title_2 %}  {% endblock title_2 %}
+                                
+                            </h2>
+                                <p class="text-p-two">
+                                    {% block content_2 %}  {% endblock content_2 %}
+                                </p>
+                        </div>
+                            <div class="bg-o-project-tw">
+                                <h2 class="h2-text">
+                                    {% block title_3 %} {% endblock title_3 %}
+                                    
+                                </h2>
+                                    <p class="text-p">
+                                        {% block content_3 %}  {% endblock content_3 %}
+                                    </p>
+                            </div>
+                                <div class="creater-1-div">
+                                    <h2 class="h2-text-two">
+                                        {% block title_4 %}  {% endblock title_4 %}
+                                    </h2>
+                                    <p class="text-p-two">
+                                        {% block content_4 %}  {% endblock content_4 %}
+                                    </p>
+                                </div>
+                                        
+                            </div>
+                </main>
+            <!--Конец main-->
+                <hr>
+            <!--Начало footer-->
+                <footer>
+                    <h2 class="h2-text-two">
+                    Может быть полезно:
+                    </h2>
+                        <div class="github">
+                            <a class="text-a" href="https://github.com/">
+                                GitHub
+                            </a>
+                        </div>
+                            <div class="github">
+                                <a class="text-a" href="https://stackoverflow.com/">
+                                    StackOverflow
+                                </a>
+                            </div>
+                                <div class="github">
+                                    <a class="text-a" href="http://htmlbook.ru/">
+                                        HtmlBook
+                                    </a>
+                                </div>
+                                    <div class="footer">
+                                        <p class="text-footer">
+                                            Сайт сделан командой энтузиастов. Все права защищены законом.<br>
+                                            Для связи с разработчиками: saytig.itjunhub.ru@gmail.com
+                                        </p>
+                                    </div>
+                </footer>
+            <!--Конец Footer-->
+    </body>
+</html>
